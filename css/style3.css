@@ -1,0 +1,87 @@
+header{
+    background-color: rgb(252, 252, 252); 
+    border: 8px solid rgb(6, 40, 85);
+    border-radius: 8em;
+    border-top-right-radius: 30% 30% 30% 30%;    
+}
+body{
+    background-image:url(https://www.publicdomainpictures.net/pictures/230000/velka/light-blue-background.jpg)
+}
+img{
+    display: block;
+    margin: auto;
+ }
+ h1{
+    text-align: center;
+    color: darkblue;
+    font: small-caps 300%/100% serif;
+
+}
+.menu{
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    justify-content: space-evenly;
+}
+.lista {
+    display: flex;
+    padding:5px 50px;
+    text-align: center;
+    font: small-caps 110%/75% serif;
+    background-color: #a1d6fa;
+    border: #011b72 3px solid;  
+}
+p{
+    font-weight: bold;
+    text-align: center;
+    font: small-caps 100%/50% serif;
+
+}
+.borde{
+    border-color: rgb(3, 12, 100);
+    border-width:thick;
+}
+.bordes {
+    border-color: rgb(15, 15, 15);
+    border-width:thin;
+}
+@media (max-width: 800px){
+    .menu, .lista{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+    h1{
+        text-align: center;
+        color: darkblue;
+        font: small-caps 200%/75% serif;
+        background-color: rgb(22, 200, 206); /* referencia para comprobar que funciona*/
+     }
+     .alineacion{
+        display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 500px;
+        max-height: 95%;
+     }
+     .borde{
+        display: grid;
+        border-color: rgb(3, 12, 100);
+        border-width:thick;
+        
+    }
+}
+
+@media (max-width: 560px){
+    .menu, .lista{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    h1{
+        text-align: center;
+        color: darkblue;
+        font: small-caps 180%/75% serif;
+        grid-template-columns: repeat(1, auto);
+        background-color: rgb(29, 151, 252); /*refencia para comprobar que funciona*/
+    }
+}

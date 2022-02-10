@@ -1,0 +1,50 @@
+header{
+    background-color: rgb(252, 252, 252); 
+    border: 8px solid rgb(6, 40, 85);
+    border-radius: 8em;
+    border-top-right-radius: 30% 30% 30% 30%;    
+}
+body{
+    background-image:url(https://www.publicdomainpictures.net/pictures/230000/velka/light-blue-background.jpg)
+}
+img{
+    display: block;
+    margin: auto;
+ }
+ 
+ h1{
+    text-align: center;
+    color: darkblue;
+    font: small-caps 300%/100% serif;
+}
+li {
+    list-style-type: none;
+    width: 10%;
+    padding:5px 50px;
+    text-align: center;
+    display: inline-block;
+    font: small-caps 110%/75% serif;
+    background-color: #a1d6fa;
+    border: #011b72 3px solid;
+    margin-right: 20px;
+    margin-left: 80px;
+}
+  .borde{
+    border-color: rgb(3, 12, 100);
+    border-width:thick;
+    text-align: center;
+    background-color: rgba(5, 12, 99, 0.767);
+}
+.colordeletra{
+    color: rgb(255, 255, 255);
+}
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+p{
+    font-weight: bold;
+    text-align: center;
+    font: small-caps 100%/50% serif;
+
+}
