@@ -1,12 +1,12 @@
 
 header{
     background-color: rgb(252, 252, 252); 
-    border: 8px solid rgb(6, 40, 85);
+    border: 8px solid rgb(8, 8, 77);
     border-radius: 8em;
     border-top-right-radius: 30% 30% 30% 30%;    
 }
 body{
-    background-image:url(https://www.publicdomainpictures.net/pictures/230000/velka/light-blue-background.jpg)
+    background-color: rgb(5, 11, 99);
 }
 img{
    display: block;
@@ -14,7 +14,7 @@ img{
 }
 h1{
     text-align: center;
-    color: darkblue;
+    color: rgb(255, 255, 255);
     font: small-caps 300%/100% serif;
     
 }  
@@ -28,30 +28,25 @@ h1{
     padding:5px 50px;
     text-align: center;
     font: small-caps 110%/75% serif;
-    background-color: #a1d6fa;
-    border: #011b72 3px solid;
-   
+    background-color: #ffffff;
+    border: rgb(8,8,77) 3px solid;   
 }
-
-
+/* css pagina SOBRE NOSOTROS*/
 p{
     font-weight: bold;
     text-align: center;
     font: small-caps 100%/50% serif;
-
 }
 .grid-container{
     display: grid;
     grid-template-columns: auto;
     color: rgb(255, 255, 255);
-    background-color: rgba(5, 12, 99, 0.767);   
+    background-color: rgb(29, 70, 122);   
     border-style: outset;
     border-width: thick;
     line-height: 200%;
     padding: 50px; 
-    border-color: rgba(0, 2, 26, 0.952)
-    
-
+    border-color: rgb(8,8,77)
 }
 .hijo{
     text-align: center;
@@ -64,6 +59,46 @@ p{
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight:normal;
+}
+.piedepagina{
+    text-align: center;
+    color: rgb(252, 252, 252);
+}
+/* css pagina GALERIA  */
+.video{
+    display: flex;
+    margin-right: 250px;
+    margin-left: 550px;
+}
+p{
+    font-weight: bold;
+    text-align: center;
+    font: small-caps 100%/50% serif;
+
+}
+.grid-padre{
+    display:grid;
+    grid-row-gap: 15px;
+    
+}
+.grid-hijo{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+/* css pagina COTIZACIONES */
+.caja{
+    border-color: rgb(3, 12, 100);
+    border-width:thick;
+    background-color: #ffffff;
+}
+.bordes {
+    border-color: rgb(15, 15, 15);
+    border-width:thin;
+}
+/* css pagina UBICACION */
+.alineacion{
+    display: grid;
+    margin: auto;
 }
 
 @media (max-width: 800px){
@@ -78,6 +113,40 @@ p{
         font: small-caps 200%/75% serif;
         background-color: rgb(22, 200, 206); /* referencia para comprobar que funciona*/
      }
+     .grid-padre{
+        display:grid;
+        grid-template-columns: repeat(0, auto);
+        justify-content: center;   
+    }
+    .grid-padre img{
+        width: 500px; 
+        max-height: 80%;  
+    }
+     .grid-hijo{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+      
+    }
+    .grid-hijo img{
+        width: 180px; 
+        max-height: 95%; 
+       
+    }
+    .video{
+        display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 500px;
+        max-height: 95%;
+        
+    }
+     .alineacion{
+        display: flex;
+        margin: auto;
+        width: 600px;
+        max-height: 95%;
+    }
 }
 @media (max-width: 560px){
     .menu, .lista{
@@ -90,5 +159,39 @@ p{
         color: darkblue;
         font: small-caps 180%/75% serif;
         background-color: rgb(29, 151, 252); /*refencia para comprobar que funciona*/
+    }
+    .grid-padre{
+        display:grid;
+        grid-template-columns: repeat(1, auto);
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+        justify-content: center;
+    }
+    .grid-padre img{
+        width: 450px; 
+        max-height: 70%;  
+    
+    }
+    .grid-hijo{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+    }
+    .grid-hijo img{
+        width: 170px; 
+        max-height: 90%;  
+    }
+    .video{
+        display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 400px; 
+        height: 300px
+    }
+    .alineacion{
+        display: block;
+        margin: auto;
+        width: 300px;
+        max-height: 90%;
     }
 }
