@@ -29,7 +29,7 @@ li {
     margin-right: 20px;
     margin-left: 80px;
 }
-  .borde{
+.borde{
     border-color: rgb(3, 12, 100);
     border-width:thick;
     text-align: center;
@@ -46,5 +46,4 @@ p{
     font-weight: bold;
     text-align: center;
     font: small-caps 100%/50% serif;
-
 }

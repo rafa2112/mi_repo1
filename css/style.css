@@ -100,6 +100,30 @@ p{
     display: grid;
     margin: auto;
 }
+/* css pagina CONTACTO*/
+.borde{
+    border-color: rgb(8,8, 77);
+    border-width:thick;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+.colordeletra{
+    color: rgb(0, 0, 0);
+    font: small-caps 150%/75% serif;
+}
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+p{
+    font-weight: bold;
+    text-align: center;
+    font: small-caps 130%/70% serif;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
 
 @media (max-width: 800px){
         .menu, .lista{
