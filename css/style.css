@@ -22,7 +22,7 @@ h1{
     font: small-caps 400%/200% serif;
     animation-duration: 3s;
     animation-name: aparecer;
-    animation-iteration-count: initial; 
+    animation-iteration-count: initial;
 }  
 h2{
     text-align: center;
