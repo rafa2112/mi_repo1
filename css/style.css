@@ -6,22 +6,45 @@ header{
     border-top-right-radius: 30% 30% 30% 30%;    
 }
 body{
-    background-color: rgb(5, 11, 99);
+    background-image: linear-gradient(darkblue, white, darkblue);
 }
 img{
    display: block;
-   margin: auto;
+   margin: auto; 
+   animation-name: aparecer;
+   animation-iteration-count:initial;
+   animation-duration: 3s;  
+   animation-timing-function: ease;
 }
 h1{
     text-align: center;
     color: rgb(255, 255, 255);
-    font: small-caps 300%/100% serif;
-    
+    font: small-caps 400%/200% serif;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; 
 }  
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font: small-caps 300%/100% serif;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;   
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .menu{
     display:grid;
     grid-template-columns:auto auto auto auto;
     justify-content: space-evenly;
+    
 }
 .lista {
     display: flex;
@@ -29,9 +52,16 @@ h1{
     text-align: center;
     font: small-caps 110%/75% serif;
     background-color: #ffffff;
-    border: rgb(8,8,77) 3px solid;   
+    border: rgb(8,8,77) 3px solid; 
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+    animation-duration: 3s;     
 }
 /* css pagina SOBRE NOSOTROS*/
+#divtransition:hover{
+    width: 1000px;
+    transition: width 10s;
+}
 p{
     font-weight: bold;
     text-align: center;
@@ -74,7 +104,6 @@ p{
     font-weight: bold;
     text-align: center;
     font: small-caps 100%/50% serif;
-
 }
 .grid-padre{
     display:grid;
@@ -85,7 +114,12 @@ p{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
 }
+
 /* css pagina COTIZACIONES */
+h3{
+    color: rgb(255, 255, 255);
+    font: small-caps 150%/75% serif;
+}
 .caja{
     border-color: rgb(3, 12, 100);
     border-width:thick;
@@ -94,6 +128,11 @@ p{
 .bordes {
     border-color: rgb(15, 15, 15);
     border-width:thin;
+}
+.subtitulo{
+    color:black ;
+    font: small-caps 150%/75% serif;
+    align-items:left;
 }
 /* css pagina UBICACION */
 .alineacion{
@@ -105,6 +144,7 @@ p{
     border-color: rgb(8,8, 77);
     border-width:thick;
     text-align: center;
+    
     background-color: rgb(255, 255, 255);
 }
 .colordeletra{
@@ -126,17 +166,33 @@ p{
 }
 
 @media (max-width: 800px){
-        .menu, .lista{
+    .menu, .lista{
             display: flex;
             flex-wrap: wrap;
             align-content: space-between;
-        }
+    }
         h1{
         text-align: center;
         color: darkblue;
         font: small-caps 200%/75% serif;
         background-color: rgb(22, 200, 206); /* referencia para comprobar que funciona*/
      }
+     h2{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font: small-caps 300%/100% serif;
+        animation-duration: 3s;
+        animation-name: aparecer;
+        animation-iteration-count:initial;   
+    }
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
      .grid-padre{
         display:grid;
         grid-template-columns: repeat(0, auto);
@@ -171,6 +227,18 @@ p{
         width: 600px;
         max-height: 95%;
     }
+    .bordetext{
+        width: 350px; 
+        max-height: 95%; 
+    }
+    img{
+        display: block;
+        margin: auto; 
+        animation-name: aparecer;
+        animation-iteration-count:initial;
+        animation-duration: 3s;  
+        animation-timing-function: ease;
+     }
 }
 @media (max-width: 560px){
     .menu, .lista{
@@ -183,6 +251,22 @@ p{
         color: darkblue;
         font: small-caps 180%/75% serif;
         background-color: rgb(29, 151, 252); /*refencia para comprobar que funciona*/
+    }
+    h2{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font: small-caps 300%/100% serif;
+        animation-duration: 3s;
+        animation-name: aparecer;
+        animation-iteration-count:initial;   
+    }
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
     .grid-padre{
         display:grid;
@@ -212,6 +296,14 @@ p{
         width: 400px; 
         height: 300px
     }
+    img{
+        display: block;
+        margin: auto; 
+        animation-name: aparecer;
+        animation-iteration-count:initial;
+        animation-duration: 3s;  
+        animation-timing-function: ease;
+     }
     .alineacion{
         display: block;
         margin: auto;
