@@ -92,7 +92,7 @@ p{
 }
 .piedepagina{
     text-align: center;
-    color: rgb(252, 252, 252);
+    color: rgb(255, 255, 255);
 }
 /* css pagina GALERIA  */
 .video{
@@ -122,7 +122,7 @@ h3{
 }
 .caja{
     border-color: rgb(3, 12, 100);
-    border-width:thick;
+    border-width:medium;
     background-color: #ffffff;
 }
 .bordes {
@@ -149,7 +149,7 @@ h3{
 }
 .colordeletra{
     color: rgb(0, 0, 0);
-    font: small-caps 150%/75% serif;
+    font-weight:normal;
 }
 h2{
     text-align: center;

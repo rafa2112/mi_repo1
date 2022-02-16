@@ -14,25 +14,28 @@
 
 <body>
     <header>
-        <img src="/mi_repo1/imagenes/Rafa1.png" alt="logo de la empresa" width="150" height="150">
+        <img src="../imagenes/Rafa1.png" alt="logo de la empresa" width="150" height="150">
+    </header>
         <h1> Cotizaciones </h1>
-    <nav>
-        <ul class="menu" class="list-unstyled">
-            <li class="lista"><a href="../pages/galeria.html">Galeria</a></li>
-            <li class="lista"><a href="../pages/ubicacion.html">Ubicación</a></li>
-            <li class="lista"><a href="../pages/contacto.html">Contacto</a></li>
-            <li class="lista"><a href="../index.html">Sobre Nosotros</a></li>
-
-        </ul>
+        <nav class="text-center" class="navbar navbar-light" style="background-color: #859ece;">
+            <ul class="list-inline list-unstyled">
+                <li class="list-inline-item"><a href="../index.html">Sobre Nosotros</a></li>
+                <li class="list-inline-item"><a href="../pages/galeria.html">Galeria</a></li>
+                <li class="list-inline-item"><a href="../pages/cotizaciones.html">Cotizaciones</a></li>
+                <li class="list-inline-item"><a href="../pages/ubicacion.html">Ubicación</a></li>
+                <li class="list-inline-item"><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
     </nav>
     <form>
         <fieldset class="caja">
+            <div class="mx-auto" style="width: 1000px;">
             
-                <h3 class="subtitulo">Formulario de Contacto </h3>
-            
+            <h3 class="subtitulo">Formulario de Contacto </h3>
+            <br></br>
+            <div class="form-group">
             <label for="Nombre">Nombre</label>
             <input class="bordes" type="text" placeholder="Ingrese su nombre" id="Nombre">
-            <br><br>
+            </div>
             <label for="E-mail">E-mail</label>
             <input class="bordes" type="text" placeholder="Ingrese su E-mail" id="E-mail">
             <br><br>
@@ -55,6 +58,7 @@
             <input type="submit" value="Enviar formulario">
             <input type="reset" value="Limpiar formulario">
             <br><br>
+            </div>
         </fieldset>
     </form>
     <!-- JS bootstrap-->
