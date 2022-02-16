@@ -5,6 +5,7 @@ header{
     border-radius: 8em;
     border-top-right-radius: 30% 30% 30% 30%;    
 }
+
 body{
     background-color: rgb(7, 10, 82);
 }
@@ -40,23 +41,7 @@ h2{
         opacity: 1;
     }
 }
-.menu{
-    display:grid;
-    grid-template-columns:auto auto auto auto;
-    justify-content: space-evenly;
-    
-}
-.lista {
-    display: flex;
-    padding:5px 50px;
-    text-align: center;
-    font: small-caps 110%/75% serif;
-    background-color: #ffffff;
-    border: rgb(8,8,77) 3px solid; 
-    animation-name: aparecer;
-    animation-iteration-count:initial;
-    animation-duration: 3s;     
-}
+
 /* css pagina SOBRE NOSOTROS*/
 #divtransition:hover{
     width: 1000px;
