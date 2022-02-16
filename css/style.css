@@ -5,13 +5,9 @@ header{
     border-radius: 8em;
     border-top-right-radius: 30% 30% 30% 30%;    
 }
-<<<<<<< HEAD
-
-=======
 body{
-    background-color: rgb(5, 11,99 );
+    background-color: rgb(8,11,99);
 }
->>>>>>> mi_rama1
 img{
    display: block;
    margin: auto; 
