@@ -6,7 +6,7 @@ header{
     border-top-right-radius: 30% 30% 30% 30%;    
 }
 
-body{
+.fondo{
     background-color: rgb(7, 10, 82);
 }
 img{
@@ -17,15 +17,15 @@ img{
    animation-duration: 3s;  
    animation-timing-function: ease;
 }
-h1{
+.text-center{
     text-align: center;
     color: rgb(255, 255, 255);
-    font: small-caps 400%/200% serif;
+    font: small-caps 350%/200% serif;
     animation-duration: 3s;
     animation-name: aparecer;
     animation-iteration-count: initial;
 }  
-h2{
+.text-center2{
     text-align: center;
     color: rgb(255, 255, 255);
     font: small-caps 300%/100% serif;
@@ -109,6 +109,7 @@ h3{
     border-color: rgb(3, 12, 100);
     border-width:medium;
     background-color: #ffffff;
+    
 }
 .bordes {
     border-color: rgb(15, 15, 15);
@@ -118,6 +119,13 @@ h3{
     color:black ;
     font: small-caps 150%/75% serif;
     align-items:left;
+}
+.bordeformulario{
+    display: grid;
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+    
 }
 /* css pagina UBICACION */
 .alineacion{
