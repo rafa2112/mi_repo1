@@ -127,7 +127,6 @@ h3{
     border-color: rgb(8,8, 77);
     border-width:thick;
     text-align: center;
-    
     background-color: rgb(255, 255, 255);
 }
 .colordeletra{
@@ -157,7 +156,7 @@ p{
     h1{
         text-align: center;
         color: darkblue;
-        font: small-caps 200%/75% serif;
+        font: small-caps 80%/50% serif;
         background-color: rgb(22, 200, 206); /* referencia para comprobar que funciona*/
      }
      h2{
@@ -203,6 +202,19 @@ p{
         animation-duration: 3s;  
         animation-timing-function: ease;
      }
+     .bordeformulario{
+        display: grid;
+        margin: auto;
+        width: max-content;
+        height: max-content;
+    }
+    .caja{
+        margin: auto;
+        border-color: rgb(3, 12, 100);
+        border-width:medium;
+        background-color: #ffffff;
+        
+    }
 }
 /*media queries */
 @media (max-width: 560px){
@@ -253,5 +265,18 @@ p{
         margin: auto;
         width: 300px;
         max-height: 90%;
+    }
+    .bordeformulario{
+        display: grid;
+        margin: auto;
+        width: max-content;
+        height: max-content;
+    }
+    .caja{
+        margin: auto;
+        border-color: rgb(3, 12, 100);
+        border-width:medium;
+        background-color: #ffffff;
+        
     }
 }
