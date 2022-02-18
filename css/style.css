@@ -61,7 +61,7 @@ p{
     border-width: thick;
     line-height: 200%;
     padding: 50px; 
-    border-color: rgb(8,8,77)
+    border-color: rgb(8,8,77);
 }
 .hijo{
     text-align: center;
@@ -82,22 +82,12 @@ p{
 /* css pagina GALERIA  */
 .video{
     display: flex;
-    margin-right: 250px;
-    margin-left: 550px;
+    margin: auto;
 }
 p{
     font-weight: bold;
     text-align: center;
     font: small-caps 100%/50% serif;
-}
-.grid-padre{
-    display:grid;
-    grid-row-gap: 15px;
-    
-}
-.grid-hijo{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
 }
 
 /* css pagina COTIZACIONES */
@@ -157,14 +147,14 @@ p{
     display: flex;
     justify-content: center;
 }
-
+/*media queries */
 @media (max-width: 800px){
     .menu, .lista{
             display: flex;
             flex-wrap: wrap;
             align-content: space-between;
     }
-        h1{
+    h1{
         text-align: center;
         color: darkblue;
         font: small-caps 200%/75% serif;
@@ -186,32 +176,13 @@ p{
             opacity: 1;
         }
     }
-     .grid-padre{
-        display:grid;
-        grid-template-columns: repeat(0, auto);
-        justify-content: center;   
-    }
-    .grid-padre img{
-        width: 500px; 
-        max-height: 80%;  
-    }
-     .grid-hijo{
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        justify-content: center;
-      
-    }
-    .grid-hijo img{
-        width: 180px; 
-        max-height: 95%; 
-       
-    }
+    
     .video{
         display: flex;
-        margin-right: 0px;
-        margin-left: 0px;
-        width: 500px;
-        max-height: 95%;
+        margin: auto;
+        width: 450px;
+        height: 350px;
+        
         
     }
      .alineacion{
@@ -233,6 +204,7 @@ p{
         animation-timing-function: ease;
      }
 }
+/*media queries */
 @media (max-width: 560px){
     .menu, .lista{
         display: flex;
@@ -261,33 +233,12 @@ p{
             opacity: 1;
         }
     }
-    .grid-padre{
-        display:grid;
-        grid-template-columns: repeat(1, auto);
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
-        justify-content: center;
-    }
-    .grid-padre img{
-        width: 450px; 
-        max-height: 70%;  
     
-    }
-    .grid-hijo{
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        justify-content: center;
-    }
-    .grid-hijo img{
-        width: 170px; 
-        max-height: 90%;  
-    }
     .video{
         display: flex;
-        margin-right: 0px;
-        margin-left: 0px;
-        width: 400px; 
-        height: 300px
+        margin: auto;
+        width: auto;
+        height: auto;
     }
     img{
         display: block;
