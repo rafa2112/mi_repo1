@@ -1,0 +1,327 @@
+@import "variables";
+
+header {
+    background-color: #fcfcfc;
+    border: 8px solid #08084d;
+    border-radius: 8em;
+    border-top-right-radius: 30% 30% 30% 30%;
+  }
+  
+  .fondo {
+    background-color: $fondo ;
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+  }
+  
+  .text-center {
+    text-align: center;
+    color: white;
+    font: $tipografiaPrincipal;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+  
+  .text-center2 {
+    text-align: center;
+    color: white;
+    font: $tipografiaPrincipal;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+  nav{
+    ul{
+      li{
+        font: $tipografiaSecundaria;
+      }
+    }
+  }
+ 
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* css pagina SOBRE NOSOTROS*/
+  #divtransition:hover {
+    width: 1000px;
+    transition: width 10s;
+  }
+  
+  p {
+    font-weight: bold;
+    text-align: center;
+    font: small-caps 100%/50% serif;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    color: white;
+    background-color: #1d467a;
+    border-style: outset;
+    border-width: thick;
+    line-height: 200%;
+    padding: 50px;
+    border-color: #08084d;
+  }
+  
+  .hijo {
+    text-align: center;
+    color: #fcfcfc;
+    font: small-caps 150%/200%;
+    font-weight: bold;
+  }
+  
+  .texto {
+    display: grid;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+  }
+  
+  .piedepagina {
+    text-align: center;
+    color: white;
+  }
+  
+  /* css pagina GALERIA  */
+  .video {
+    display: flex;
+    margin: auto;
+  }
+  
+  p {
+    font-weight: bold;
+    text-align: center;
+    font: small-caps 100%/50% serif;
+  }
+  
+  /* css pagina COTIZACIONES */
+  h3 {
+    color: white;
+    font: small-caps 150%/75% serif;
+  }
+  
+  .caja {
+    border-color: #030c64;
+    border-width: medium;
+    background-color: #ffffff;
+  }
+  .form-group{
+    margin-left: 20px;
+    }
+    
+  .bordes {
+    border-color: #0f0f0f;
+    border-width: thin;
+  }
+  
+  .subtitulo {
+    color: black;
+    font: small-caps 150%/75% serif;
+    align-items: left;
+    margin-left: 20px;
+  }
+  
+  .bordeformulario {
+    display: grid;
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+  }
+  
+  /* css pagina UBICACION */
+  .alineacion {
+    display: grid;
+    margin: auto;
+  }
+  
+  /* css pagina CONTACTO*/
+  .borde {
+    border-color: #08084d;
+    border-width: thick;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .colordeletra {
+    color: black;
+    font-weight: normal;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+  }
+  
+  p {
+    font-weight: bold;
+    text-align: center;
+    font: small-caps 130%/70% serif;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*media queries */
+  @media (max-width: 800px) {
+    .menu, .lista {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+    h1 {
+      text-align: center;
+      color: darkblue;
+      font: small-caps 80%/50% serif;
+      background-color: #16c8ce;
+      /* referencia para comprobar que funciona*/
+    }
+    h2 {
+      text-align: center;
+      color: white;
+      font: small-caps 300%/100% serif;
+      animation-duration: 3s;
+      animation-name: aparecer;
+      animation-iteration-count: initial;
+    }
+    @keyframes aparecer {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .video {
+      display: flex;
+      margin: auto;
+      width: 450px;
+      height: 350px;
+    }
+    .alineacion {
+      display: flex;
+      margin: auto;
+      width: 600px;
+      max-height: 95%;
+    }
+    .bordetext {
+      width: 350px;
+      max-height: 95%;
+    }
+    img {
+      display: block;
+      margin: auto;
+      animation-name: aparecer;
+      animation-iteration-count: initial;
+      animation-duration: 3s;
+      animation-timing-function: ease;
+    }
+    .bordeformulario {
+      display: grid;
+      margin: auto;
+      width: max-content;
+      height: max-content;
+    }
+    .caja {
+      margin: auto;
+      border-color: #030c64;
+      border-width: medium;
+      background-color: #ffffff;
+    }
+  }
+  
+  /*media queries */
+  @media (max-width: 560px) {
+    .menu, .lista {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+    h1 {
+      text-align: center;
+      color: darkblue;
+      font: small-caps 180%/75% serif;
+      background-color: #1d97fc;
+      /*refencia para comprobar que funciona*/
+    }
+    h2 {
+      text-align: center;
+      color: white;
+      font: small-caps 300%/100% serif;
+      animation-duration: 3s;
+      animation-name: aparecer;
+      animation-iteration-count: initial;
+    }
+    @keyframes aparecer {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .video {
+      display: flex;
+      margin: auto;
+      width: auto;
+      height: auto;
+    }
+    img {
+      display: block;
+      margin: auto;
+      animation-name: aparecer;
+      animation-iteration-count: initial;
+      animation-duration: 3s;
+      animation-timing-function: ease;
+    }
+    .alineacion {
+      display: block;
+      margin: auto;
+      width: 300px;
+      max-height: 90%;
+    }
+    .bordeformulario {
+      display: grid;
+      margin: auto;
+      width: max-content;
+      height: max-content;
+    }
+    .caja {
+      margin: auto;
+      border-color: #030c64;
+      border-width: medium;
+      background-color: #ffffff;
+    }
+  }
+  
+  .formulario {
+    display: grid;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+  }
+  
+  .caja {
+    margin: auto;
+    border-color: #030c64;
+    border-width: medium;
+    background-color: #ffffff;
+  }
+  

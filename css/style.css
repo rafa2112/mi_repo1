@@ -1,282 +1,414 @@
-
-header{
-    background-color: rgb(252, 252, 252); 
-    border: 8px solid rgb(8, 8, 77);
-    border-radius: 8em;
-    border-top-right-radius: 30% 30% 30% 30%;    
+header {
+  background-color: #fcfcfc;
+  border: 8px solid #08084d;
+  border-radius: 8em;
+  border-top-right-radius: 30% 30% 30% 30%;
 }
 
-.fondo{
-    background-color: rgb(7, 10, 82);
+.fondo {
+  background-color: #070a52;
 }
-img{
-   display: block;
-   margin: auto; 
-   animation-name: aparecer;
-   animation-iteration-count:initial;
-   animation-duration: 3s;  
-   animation-timing-function: ease;
+
+img {
+  display: block;
+  margin: auto;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
-.text-center{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font: small-caps 350%/200% serif;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
-}  
-.text-center2{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font: small-caps 300%/100% serif;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count:initial;   
+
+.text-center {
+  text-align: center;
+  color: white;
+  font: small-caps 300%/100% serif;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
 }
+
+.text-center2 {
+  text-align: center;
+  color: white;
+  font: small-caps 300%/100% serif;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+nav ul li {
+  font: small-caps bold 150%/50% serif;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* css pagina SOBRE NOSOTROS*/
-#divtransition:hover{
-    width: 1000px;
-    transition: width 10s;
+#divtransition:hover {
+  width: 1000px;
+  -webkit-transition: width 10s;
+  transition: width 10s;
 }
-p{
-    font-weight: bold;
-    text-align: center;
-    font: small-caps 100%/50% serif;
+
+p {
+  font-weight: bold;
+  text-align: center;
+  font: small-caps 100%/50% serif;
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: auto;
-    color: rgb(255, 255, 255);
-    background-color: rgb(29, 70, 122);   
-    border-style: outset;
-    border-width: thick;
-    line-height: 200%;
-    padding: 50px; 
-    border-color: rgb(8,8,77);
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  color: white;
+  background-color: #1d467a;
+  border-style: outset;
+  border-width: thick;
+  line-height: 200%;
+  padding: 50px;
+  border-color: #08084d;
 }
-.hijo{
-    text-align: center;
-    color: rgb(252, 252, 252);
-    font: small-caps 150%/200%;
-    font-weight: bold;
+
+.hijo {
+  text-align: center;
+  color: #fcfcfc;
+  font: small-caps 150%/200%;
+  font-weight: bold;
 }
-.texto{
-    display: grid;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight:normal;
+
+.texto {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  color: white;
+  font-weight: normal;
 }
-.piedepagina{
-    text-align: center;
-    color: rgb(255, 255, 255);
+
+.piedepagina {
+  text-align: center;
+  color: white;
 }
+
 /* css pagina GALERIA  */
-.video{
-    display: flex;
-    margin: auto;
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
 }
-p{
-    font-weight: bold;
-    text-align: center;
-    font: small-caps 100%/50% serif;
+
+p {
+  font-weight: bold;
+  text-align: center;
+  font: small-caps 100%/50% serif;
 }
 
 /* css pagina COTIZACIONES */
-h3{
-    color: rgb(255, 255, 255);
-    font: small-caps 150%/75% serif;
+h3 {
+  color: white;
+  font: small-caps 150%/75% serif;
 }
-.caja{
-    border-color: rgb(3, 12, 100);
-    border-width:medium;
-    background-color: #ffffff;
-    
+
+.caja {
+  border-color: #030c64;
+  border-width: medium;
+  background-color: #ffffff;
 }
+
+.form-group {
+  margin-left: 20px;
+}
+
 .bordes {
-    border-color: rgb(15, 15, 15);
-    border-width:thin;
+  border-color: #0f0f0f;
+  border-width: thin;
 }
-.subtitulo{
-    color:black ;
-    font: small-caps 150%/75% serif;
-    align-items:left;
+
+.subtitulo {
+  color: black;
+  font: small-caps 150%/75% serif;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-left: 20px;
 }
-.bordeformulario{
-    display: grid;
-    margin: auto;
-    width: 1000px;
-    height: 1000px;
-    
+
+.bordeformulario {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  width: 1000px;
+  height: 1000px;
 }
+
 /* css pagina UBICACION */
-.alineacion{
+.alineacion {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+}
+
+/* css pagina CONTACTO*/
+.borde {
+  border-color: #08084d;
+  border-width: thick;
+  text-align: center;
+  background-color: white;
+}
+
+.colordeletra {
+  color: black;
+  font-weight: normal;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+  font: small-caps 130%/70% serif;
+}
+
+.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*media queries */
+@media (max-width: 800px) {
+  .menu, .lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  h1 {
+    text-align: center;
+    color: darkblue;
+    font: small-caps 80%/50% serif;
+    background-color: #16c8ce;
+    /* referencia para comprobar que funciona*/
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    font: small-caps 300%/100% serif;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 450px;
+    height: 350px;
+  }
+  .alineacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 600px;
+    max-height: 95%;
+  }
+  .bordetext {
+    width: 350px;
+    max-height: 95%;
+  }
+  img {
+    display: block;
+    margin: auto;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  .bordeformulario {
+    display: -ms-grid;
     display: grid;
     margin: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .caja {
+    margin: auto;
+    border-color: #030c64;
+    border-width: medium;
+    background-color: #ffffff;
+  }
 }
-/* css pagina CONTACTO*/
-.borde{
-    border-color: rgb(8,8, 77);
-    border-width:thick;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-}
-.colordeletra{
-    color: rgb(0, 0, 0);
-    font-weight:normal;
-}
-h2{
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-p{
-    font-weight: bold;
-    text-align: center;
-    font: small-caps 130%/70% serif;
-}
-.botones{
+
+/*media queries */
+@media (max-width: 560px) {
+  .menu, .lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-}
-/*media queries */
-@media (max-width: 800px){
-    .menu, .lista{
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-    }
-    h1{
-        text-align: center;
-        color: darkblue;
-        font: small-caps 80%/50% serif;
-        background-color: rgb(22, 200, 206); /* referencia para comprobar que funciona*/
-     }
-     h2{
-        text-align: center;
-        color: rgb(255, 255, 255);
-        font: small-caps 300%/100% serif;
-        animation-duration: 3s;
-        animation-name: aparecer;
-        animation-iteration-count:initial;   
-    }
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    .video{
-        display: flex;
-        margin: auto;
-        width: 450px;
-        height: 350px;
-        
-        
-    }
-     .alineacion{
-        display: flex;
-        margin: auto;
-        width: 600px;
-        max-height: 95%;
-    }
-    .bordetext{
-        width: 350px; 
-        max-height: 95%; 
-    }
-    img{
-        display: block;
-        margin: auto; 
-        animation-name: aparecer;
-        animation-iteration-count:initial;
-        animation-duration: 3s;  
-        animation-timing-function: ease;
-     }
-     .bordeformulario{
-        display: grid;
-        margin: auto;
-        width: max-content;
-        height: max-content;
-    }
-    .caja{
-        margin: auto;
-        border-color: rgb(3, 12, 100);
-        border-width:medium;
-        background-color: #ffffff;
-        
-    }
-}
-/*media queries */
-@media (max-width: 560px){
-    .menu, .lista{
-        display: flex;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
         align-content: space-between;
+  }
+  h1 {
+    text-align: center;
+    color: darkblue;
+    font: small-caps 180%/75% serif;
+    background-color: #1d97fc;
+    /*refencia para comprobar que funciona*/
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    font: small-caps 300%/100% serif;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
     }
-    h1{
-        text-align: center;
-        color: darkblue;
-        font: small-caps 180%/75% serif;
-        background-color: rgb(29, 151, 252); /*refencia para comprobar que funciona*/
+    100% {
+      opacity: 1;
     }
-    h2{
-        text-align: center;
-        color: rgb(255, 255, 255);
-        font: small-caps 300%/100% serif;
-        animation-duration: 3s;
-        animation-name: aparecer;
-        animation-iteration-count:initial;   
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
     }
-    @keyframes aparecer {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+    100% {
+      opacity: 1;
     }
-    
-    .video{
-        display: flex;
-        margin: auto;
-        width: auto;
-        height: auto;
-    }
-    img{
-        display: block;
-        margin: auto; 
-        animation-name: aparecer;
-        animation-iteration-count:initial;
-        animation-duration: 3s;  
-        animation-timing-function: ease;
-     }
-    .alineacion{
-        display: block;
-        margin: auto;
-        width: 300px;
-        max-height: 90%;
-    }
-    .bordeformulario{
-        display: grid;
-        margin: auto;
-        width: max-content;
-        height: max-content;
-    }
-    .caja{
-        margin: auto;
-        border-color: rgb(3, 12, 100);
-        border-width:medium;
-        background-color: #ffffff;
-        
-    }
+  }
+  .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+  img {
+    display: block;
+    margin: auto;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  .alineacion {
+    display: block;
+    margin: auto;
+    width: 300px;
+    max-height: 90%;
+  }
+  .bordeformulario {
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .caja {
+    margin: auto;
+    border-color: #030c64;
+    border-width: medium;
+    background-color: #ffffff;
+  }
 }
+
+.formulario {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.caja {
+  margin: auto;
+  border-color: #030c64;
+  border-width: medium;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
