@@ -87,7 +87,8 @@ p {
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   color: white;
-  background-color: #1d467a;
+  /*maps*/
+  background-color: #3561b3;
   border-style: outset;
   border-width: thick;
   line-height: 200%;
@@ -138,7 +139,6 @@ h3 {
 .caja {
   border-color: #030c64;
   border-width: medium;
-  background-color: #ffffff;
 }
 
 .form-group {
@@ -205,6 +205,19 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.btn, .newbtn {
+  font-style: italic;
+  background-color: #dbfdff;
+  font-size: large;
+}
+
+/*extend*/
+/*mixin*/
+.btn-1 {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /*media queries */
@@ -389,7 +402,7 @@ p {
     margin: auto;
     border-color: #030c64;
     border-width: medium;
-    background-color: #ffffff;
+    background-color: #3561b3;
   }
 }
 

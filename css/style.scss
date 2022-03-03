@@ -71,14 +71,15 @@ header {
     display: grid;
     grid-template-columns: auto;
     color: white;
-    background-color: #1d467a;
+    /*maps*/
+    background-color: map-get($estilo, color1);
     border-style: outset;
     border-width: thick;
     line-height: 200%;
     padding: 50px;
     border-color: #08084d;
   }
-  
+
   .hijo {
     text-align: center;
     color: #fcfcfc;
@@ -119,7 +120,6 @@ header {
   .caja {
     border-color: #030c64;
     border-width: medium;
-    background-color: #ffffff;
   }
   .form-group{
     margin-left: 20px;
@@ -178,6 +178,28 @@ header {
     display: flex;
     justify-content: center;
   }
+
+  .btn{
+    font-style: italic;
+    background-color: $fondobotones;
+    font-size: large;
+  }
+  /*extend*/
+  .newbtn{
+    @extend .btn;
+  }
+  
+  /*mixin*/
+  @mixin bold{
+    font-weight:bold;
+    }
+  @mixin underline ($fondobotones) {
+    text-decoration: underline; 
+  }
+  .btn-1{
+    @include bold;
+    @include underline (rgb(8, 8, 8));
+    }
   
   /*media queries */
   @media (max-width: 800px) {
@@ -307,7 +329,7 @@ header {
       margin: auto;
       border-color: #030c64;
       border-width: medium;
-      background-color: #ffffff;
+    background-color: map-get($estilo, color1);
     }
   }
   
@@ -324,4 +346,3 @@ header {
     border-width: medium;
     background-color: #ffffff;
   }
-  
