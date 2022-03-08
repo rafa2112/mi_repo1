@@ -39,6 +39,7 @@ header {
   }
   nav{
     ul{
+      display: flex;
       li{
         font: $tipografiaSecundaria;
       }
@@ -56,10 +57,7 @@ header {
   }
   
   /* css pagina SOBRE NOSOTROS*/
-  #divtransition:hover {
-    width: 1000px;
-    transition: width 10s;
-  }
+
   
   p {
     font-weight: bold;
@@ -69,7 +67,6 @@ header {
   
   .grid-container {
     display: grid;
-    grid-template-columns: auto;
     color: white;
     /*maps*/
     background-color: map-get($estilo, color1);
@@ -113,23 +110,17 @@ header {
   
   /* css pagina COTIZACIONES */
   h3 {
-    color: white;
     font: small-caps 150%/75% serif;
   }
-  
-  .caja {
-    border-color: #030c64;
-    border-width: medium;
-  }
-  .form-group{
-    margin-left: 20px;
-    }
-    
   .bordes {
     border-color: #0f0f0f;
     border-width: thin;
   }
-  
+  .formulario{
+    background-color: #e3e9ebfa;
+    background-size: auto;
+    padding: 20px;
+  }
   .subtitulo {
     color: black;
     font: small-caps 150%/75% serif;
@@ -142,6 +133,8 @@ header {
     margin: auto;
     width: 1000px;
     height: 1000px;
+    justify-content: center;
+
   }
   
   /* css pagina UBICACION */
@@ -212,7 +205,6 @@ header {
       text-align: center;
       color: darkblue;
       font: small-caps 80%/50% serif;
-      background-color: #16c8ce;
       /* referencia para comprobar que funciona*/
     }
     h2 {
@@ -261,27 +253,25 @@ header {
       width: max-content;
       height: max-content;
     }
-    .caja {
-      margin: auto;
-      border-color: #030c64;
-      border-width: medium;
-      background-color: #ffffff;
-    }
+    .formulario{
+      display: grid;
+      background-color: #d7dcddfa;
+      background-size: auto;
+      padding: 20px;
   }
-  
+}
   /*media queries */
-  @media (max-width: 560px) {
+  @media (max-width: 320px) {
     .menu, .lista {
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
     }
+    
     h1 {
       text-align: center;
       color: darkblue;
       font: small-caps 180%/75% serif;
-      background-color: #1d97fc;
-      /*refencia para comprobar que funciona*/
     }
     h2 {
       text-align: center;
@@ -325,24 +315,15 @@ header {
       width: max-content;
       height: max-content;
     }
-    .caja {
-      margin: auto;
-      border-color: #030c64;
-      border-width: medium;
-    background-color: map-get($estilo, color1);
+    .formulario{
+      display: grid;
+      background-color: #d7dcddfa;
+      background-size: 100px;
+      width: 200px;
+      padding: 5px;
+    }
+    .form-control{
+      background-size: 50px;
     }
   }
   
-  .formulario {
-    display: grid;
-    margin: auto;
-    width: max-content;
-    height: max-content;
-  }
-  
-  .caja {
-    margin: auto;
-    border-color: #030c64;
-    border-width: medium;
-    background-color: #ffffff;
-  }

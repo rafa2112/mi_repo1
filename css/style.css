@@ -46,6 +46,12 @@ img {
           animation-iteration-count: initial;
 }
 
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 nav ul li {
   font: small-caps bold 150%/50% serif;
 }
@@ -69,12 +75,6 @@ nav ul li {
 }
 
 /* css pagina SOBRE NOSOTROS*/
-#divtransition:hover {
-  width: 1000px;
-  -webkit-transition: width 10s;
-  transition: width 10s;
-}
-
 p {
   font-weight: bold;
   text-align: center;
@@ -84,8 +84,6 @@ p {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
   color: white;
   /*maps*/
   background-color: #3561b3;
@@ -132,22 +130,18 @@ p {
 
 /* css pagina COTIZACIONES */
 h3 {
-  color: white;
   font: small-caps 150%/75% serif;
-}
-
-.caja {
-  border-color: #030c64;
-  border-width: medium;
-}
-
-.form-group {
-  margin-left: 20px;
 }
 
 .bordes {
   border-color: #0f0f0f;
   border-width: thin;
+}
+
+.formulario {
+  background-color: #e3e9ebfa;
+  background-size: auto;
+  padding: 20px;
 }
 
 .subtitulo {
@@ -165,6 +159,9 @@ h3 {
   margin: auto;
   width: 1000px;
   height: 1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* css pagina UBICACION */
@@ -235,7 +232,6 @@ p {
     text-align: center;
     color: darkblue;
     font: small-caps 80%/50% serif;
-    background-color: #16c8ce;
     /* referencia para comprobar que funciona*/
   }
   h2 {
@@ -308,16 +304,17 @@ p {
     height: -moz-max-content;
     height: max-content;
   }
-  .caja {
-    margin: auto;
-    border-color: #030c64;
-    border-width: medium;
-    background-color: #ffffff;
+  .formulario {
+    display: -ms-grid;
+    display: grid;
+    background-color: #d7dcddfa;
+    background-size: auto;
+    padding: 20px;
   }
 }
 
 /*media queries */
-@media (max-width: 560px) {
+@media (max-width: 320px) {
   .menu, .lista {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -331,8 +328,6 @@ p {
     text-align: center;
     color: darkblue;
     font: small-caps 180%/75% serif;
-    background-color: #1d97fc;
-    /*refencia para comprobar que funciona*/
   }
   h2 {
     text-align: center;
@@ -398,30 +393,16 @@ p {
     height: -moz-max-content;
     height: max-content;
   }
-  .caja {
-    margin: auto;
-    border-color: #030c64;
-    border-width: medium;
-    background-color: #3561b3;
+  .formulario {
+    display: -ms-grid;
+    display: grid;
+    background-color: #d7dcddfa;
+    background-size: 100px;
+    width: 200px;
+    padding: 5px;
   }
-}
-
-.formulario {
-  display: -ms-grid;
-  display: grid;
-  margin: auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.caja {
-  margin: auto;
-  border-color: #030c64;
-  border-width: medium;
-  background-color: #ffffff;
+  .form-control {
+    background-size: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

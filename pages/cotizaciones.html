@@ -23,50 +23,86 @@
     </header>
     <br></br>
         <h1 class="text-center"> Cotizaciones </h1>
-        <nav>
-            <ul class="nav justify-content-around" style="background-color: aliceblue;">                
-                <li class="nav-item"><a class="nav-link active" style="color: rgb(5, 11, 99);" aria-current="page"  href="../index.html">Sobre Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link active" style="color: rgb(5, 11, 99);" aria-current="page" href="../pages/galeria.html">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link active" style="color: rgb(5, 11, 99);" aria-current="page" href="../pages/cotizaciones.html">Cotizaciones</a></li>
-                <li class="nav-item"><a class="nav-link active" style="color: rgb(5, 11, 99);" aria-current="page" href="../pages/ubicacion.html">Ubicación</a></li>
-                <li class="nav-item"><a class="nav-link active" style="color: rgb(5, 11, 99);" aria-current="page" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-light p-3 sticky-top" style="background-color: #ffffff">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse justify-content-evenly collapse show" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="../index.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">inicio</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="../galeria.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Galeria</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="../cotizaciones.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Cotizaciones</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="../ubicacion.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Ubicacion</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="../contacto.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </ul>
+                        </li>
+                        <span><i class="fas fa-shopping-cart fs-5 wow animate__ animate__tada animated" aria-hidden="true"
+                                style="visibility: visible; animation-name: tada;"></i></span>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     <br></br>
     <form class="bordeformulario">
         <fieldset class="caja">
-            <div class="mx-auto" style="width: 800px;">
-                <br></br>
-                <h1 class="subtitulo">Formulario de Contacto </h1>
-                <br></br>
-                <div class="form-group">
-                    <label for="Nombre">Nombre</label>
-                    <input class="bordes" type="text" placeholder="Ingrese su nombre" id="Nombre">
-                    <br><br>
-                    <label for="E-mail">E-mail</label>
-                    <input class="bordes" type="text" placeholder="Ingrese su E-mail" id="E-mail">
-                    <br><br>
-                    <label for="Telefono">Telefono de contacto</label>
-                    <input class="bordes" type="text" placeholder="Ingrese su Telefono" id="Telefono">
-                    <br><br>
-                    <label for="Ciudad">Ciudad de origen del flete</label>
-                    <input class="bordes" type="text" placeholder="Ingrese ciudad de origen" id="origen">
-                    <br><br>
-                    <label for="Ciudad">Ciudad de destino del flete</label>
-                    <input class="bordes" type="text" placeholder="Ingrese ciudad de destino" id="destino">
-                    <br><br>
-                    <label for="peso">Peso en kg de la carga</label>
-                    <input class="bordes" type="text" placeholder="Ingrese peso de la carga" id="peso">
-                    <br><br>
-                    <label for="Descripcion">Ingrese descripcion sobre la carga:</label>
-                    <br><br>
-                    <textarea class="bordetext" cols="70" rows="15"> </textarea>
-                    <br><br>
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset" value="Limpiar formulario">
-                    <br><br>
+                <div class="formulario" style="width: 550px;">
+                    <h1 class="subtitulo">Formulario de Contacto </h1>
+                    <br></br>
+                    <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input class="bordes" type="text" placeholder="Ingrese su nombre" id="Nombre">
+                        <br><br>
+                        <label for="E-mail">E-mail</label>
+                        <input class="bordes" type="text" placeholder="Ingrese su E-mail" id="E-mail">
+                        <br><br>
+                        <label for="Telefono">Telefono de contacto</label>
+                        <input class="bordes" type="text" placeholder="Ingrese su Telefono" id="Telefono">
+                        <br><br>
+                        <label for="Ciudad">Ciudad de origen del flete</label>
+                        <input class="bordes" type="text" placeholder="Ingrese ciudad de origen" id="origen">
+                        <br><br>
+                        <label for="Ciudad">Ciudad de destino del flete</label>
+                        <input class="bordes" type="text" placeholder="Ingrese ciudad de destino" id="destino">
+                        <br><br>
+                        <label for="peso">Peso en kg de la carga</label>
+                        <input class="bordes" type="text" placeholder="Ingrese peso de la carga" id="peso">
+                        <br><br>
+                        <label for="Descripcion">Ingrese descripcion sobre la carga:</label>
+                        <br><br>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <br><br>
+                        <input type="submit" value="Enviar formulario">
+                        <input type="reset" value="Limpiar formulario">
+                        <br><br>
+                    </div>
                 </div>
-            </div>
+            </span>
         </fieldset>
     </form>
     <!-- JS bootstrap-->
