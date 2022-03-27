@@ -20,7 +20,7 @@ header {
     animation-timing-function: ease;
   }
   
-  .text-center {
+  .text-center1 {
     text-align: center;
     color: white;
     font: $tipografiaPrincipal;
@@ -33,32 +33,64 @@ header {
     text-align: center;
     color: white;
     font: $tipografiaPrincipal;
+    background-color: map-get($estilo, color2);
     animation-duration: 3s;
     animation-name: aparecer;
     animation-iteration-count: initial;
   }
-  nav{
-    ul{
-      display: flex;
-      li{
-        font: $tipografiaSecundaria;
-      }
-    }
-  }
- 
   
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  /*BARRA MENU*/
+  .container__menu{
+  display:inline-table;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  align-content: center;
+  text-transform: uppercase;
+  }
+  nav > ul{
+  display: flex;
+  }
+  nav > ul > li{
+  list-style: none;
+  position: relative;
+  }
+  nav > ul > li > a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: rgb(9, 10, 65);
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 300ms ease;
+  font: $tipografiaSecundaria;
+  }
+  
+  nav > ul > li > a:hover{
+  transform: scale (1.1);
+  background: rgb(159, 159, 172);
+  box-shadow: 0px 0px 10px 0px darkblue;
+  }
+ /*elementos responsivos*/
+ .icon__menu{
+  display: none;
+  font-size: 30px;
+  color: $fondo;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  align-items: center;
+  }
+  #check__menu{
+  display: none;
+  }
+  #label__check{
+    width: 26px;
+    height: 100%;
   }
   
   /* css pagina SOBRE NOSOTROS*/
-
-  
   p {
     font-weight: bold;
     text-align: center;
@@ -143,19 +175,16 @@ header {
     margin: auto;
   }
   
-  /* css pagina CONTACTO*/
-  .borde {
-    border-color: #08084d;
-    border-width: thick;
-    text-align: center;
-    background-color: white;
-  }
-  
+  /* css pagina CONTACTO*/  
   .colordeletra {
     color: black;
     font-weight: normal;
   }
-  
+  h1{
+    text-align: center;
+    color: white;
+    font: $tipografiaPrincipal;
+  }
   h2 {
     text-align: center;
     color: white;
@@ -165,6 +194,9 @@ header {
     font-weight: bold;
     text-align: center;
     font: small-caps 130%/70% serif;
+  }
+  .text-center{
+    background-color: map-get($estilo, color2);
   }
   
   .botones {
@@ -195,7 +227,7 @@ header {
     }
   
   /*media queries */
-  @media (max-width: 800px) {
+  @media (max-width: 720px) {
     .menu, .lista {
       display: flex;
       flex-wrap: wrap;
@@ -215,14 +247,41 @@ header {
       animation-name: aparecer;
       animation-iteration-count: initial;
     }
-    @keyframes aparecer {
-      0% {
-        opacity: 0;
+    nav> ul {
+      flex-direction: column;
+      left: 0;
+      top: 158px;
+      width: 100%;
+      height: 0px;
+      opacity: 0;
+      visibility: hidden;
       }
-      100% {
-        opacity: 1;
+    nav > ul > li > a:hover{
+      transform: scale (1);
       }
+    nav ul li ul {
+      left: 90px;
+     
+     }
+    nav ul > li:hover ul{
+      top: 50px;
     }
+    #selected{
+      transform: scale(1);
+    }
+    #label__check{
+      display:block;
+    }
+    .icon__menu{
+      display: block;
+      font-size: 20px;
+      color: $fondo;
+      }
+    #check__menu:checked ~ nav > ul{
+      height: 300px;
+      visibility: visible;
+      opacity:1;
+      }
     .video {
       display: flex;
       margin: auto;
@@ -281,14 +340,7 @@ header {
       animation-name: aparecer;
       animation-iteration-count: initial;
     }
-    @keyframes aparecer {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
+   
     .video {
       display: flex;
       margin: auto;
@@ -325,5 +377,39 @@ header {
     .form-control{
       background-size: 50px;
     }
+    nav> ul {
+      flex-direction: column;
+      left: 0;
+      top: 158px;
+      width: 100%;
+      height: 0px;
+      opacity: 0;
+      visibility: hidden;
+      }
+    nav > ul > li > a:hover{
+      transform: scale (1);
+      }
+    nav ul li ul {
+      left: 90px;
+     }
+    nav ul > li:hover ul{
+      top: 50px;
+    }
+    #selected{
+      transform: scale(1);
+    }
+    #label__check{
+      display:block;
+    }
+    .icon__menu{
+      display: flex;
+      font-size: 20px;
+      color: $fondo;
+    }
+    #check__menu:checked ~ nav > ul{
+      height: 300px;
+      visibility: visible;
+      opacity:1;
+      }
   }
   

@@ -22,7 +22,7 @@ img {
           animation-timing-function: ease;
 }
 
-.text-center {
+.text-center1 {
   text-align: center;
   color: white;
   font: small-caps 300%/100% serif;
@@ -38,6 +38,7 @@ img {
   text-align: center;
   color: white;
   font: small-caps 300%/100% serif;
+  background-color: #1279da;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: aparecer;
@@ -46,32 +47,73 @@ img {
           animation-iteration-count: initial;
 }
 
-nav ul {
+/*BARRA MENU*/
+.container__menu {
+  display: inline-table;
+  width: 100%;
+  background: white;
+  padding: 5px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-transform: uppercase;
+}
+
+nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav ul li {
+nav > ul > li {
+  list-style: none;
+  position: relative;
+}
+
+nav > ul > li > a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  color: #090a41;
+  text-transform: uppercase;
+  font-size: 14px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   font: small-caps bold 150%/50% serif;
 }
 
-@-webkit-keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+nav > ul > li > a:hover {
+  -webkit-transform: scale 1.1;
+          transform: scale 1.1;
+  background: #9f9fac;
+  -webkit-box-shadow: 0px 0px 10px 0px darkblue;
+          box-shadow: 0px 0px 10px 0px darkblue;
 }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+/*elementos responsivos*/
+.icon__menu {
+  display: none;
+  font-size: 30px;
+  color: #070a52;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#check__menu {
+  display: none;
+}
+
+#label__check {
+  width: 26px;
+  height: 100%;
 }
 
 /* css pagina SOBRE NOSOTROS*/
@@ -172,16 +214,15 @@ h3 {
 }
 
 /* css pagina CONTACTO*/
-.borde {
-  border-color: #08084d;
-  border-width: thick;
-  text-align: center;
-  background-color: white;
-}
-
 .colordeletra {
   color: black;
   font-weight: normal;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font: small-caps 300%/100% serif;
 }
 
 h2 {
@@ -193,6 +234,10 @@ p {
   font-weight: bold;
   text-align: center;
   font: small-caps 130%/70% serif;
+}
+
+.text-center {
+  background-color: #1279da;
 }
 
 .botones {
@@ -218,7 +263,7 @@ p {
 }
 
 /*media queries */
-@media (max-width: 800px) {
+@media (max-width: 720px) {
   .menu, .lista {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -245,21 +290,44 @@ p {
     -webkit-animation-iteration-count: initial;
             animation-iteration-count: initial;
   }
-  @-webkit-keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  nav > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
   }
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  nav > ul > li > a:hover {
+    -webkit-transform: scale 1;
+            transform: scale 1;
+  }
+  nav ul li ul {
+    left: 90px;
+  }
+  nav ul > li:hover ul {
+    top: 50px;
+  }
+  #selected {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #label__check {
+    display: block;
+  }
+  .icon__menu {
+    display: block;
+    font-size: 20px;
+    color: #070a52;
+  }
+  #check__menu:checked ~ nav > ul {
+    height: 300px;
+    visibility: visible;
+    opacity: 1;
   }
   .video {
     display: -webkit-box;
@@ -340,22 +408,6 @@ p {
     -webkit-animation-iteration-count: initial;
             animation-iteration-count: initial;
   }
-  @-webkit-keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   .video {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -403,6 +455,47 @@ p {
   }
   .form-control {
     background-size: 50px;
+  }
+  nav > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav > ul > li > a:hover {
+    -webkit-transform: scale 1;
+            transform: scale 1;
+  }
+  nav ul li ul {
+    left: 90px;
+  }
+  nav ul > li:hover ul {
+    top: 50px;
+  }
+  #selected {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #label__check {
+    display: block;
+  }
+  .icon__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    color: #070a52;
+  }
+  #check__menu:checked ~ nav > ul {
+    height: 300px;
+    visibility: visible;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

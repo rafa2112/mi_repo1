@@ -8,12 +8,17 @@
     <meta name="description" content="cotizaciones">
     <meta name="keywords" content="flete, origen, destino,transporte, cotizaciones, presupuesto">
     <meta name="description" content="ven y solicita tu cotizacion sin compromiso en nuestra pagina">
-
+    <script src="https://kit.fontawesome.com/4ee13eb762.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <!--css bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <title>Cotizaciones</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Cotizaciones</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </head>
 
 <body class="fondo">
@@ -22,93 +27,72 @@
         <img src="../imagenes/Rafa1.png" alt="logo de la empresa" width="150" height="150">
     </header>
     <br></br>
-        <h1 class="text-center"> Cotizaciones </h1>
-        <nav class="navbar navbar-expand-lg navbar-light p-3 sticky-top" style="background-color: #ffffff">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse justify-content-evenly collapse show" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="../index.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">inicio</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="../galeria.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Galeria</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="../cotizaciones.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Cotizaciones</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="../ubicacion.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Ubicacion</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="../contacto.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            </ul>
-                        </li>
-                        <span><i class="fas fa-shopping-cart fs-5 wow animate__ animate__tada animated" aria-hidden="true"
-                                style="visibility: visible; animation-name: tada;"></i></span>
-                        </a>
-                    </ul>
-                </div>
-            </div>
+    <h1 class="text-center1"> Cotizaciones </h1>
+    <div class="container__menu">
+        <div class="menu">
+        <input type="checkbox" id="check__menu">
+        <label id="#label__check" for="check__menu">
+            <i class="fa-solid fa-bars icon__menu"></i>
+            </label>
+        <nav>
+        <ul class="pagination justify-content-center" id="#selected">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/galeria.html">Galeria</a></li>
+            <li><a href="../pages/cotizaciones.html">Cotizaciones</a></li>
+            <li><a href="../pages/ubicacion.html">Ubicacion</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
         </nav>
+    </imput>
+    </div>
+    </div>
     <br></br>
     <form class="bordeformulario">
         <fieldset class="caja">
-                <div class="formulario" style="width: 550px;">
-                    <h1 class="subtitulo">Formulario de Contacto </h1>
-                    <br></br>
-                    <div class="form-group">
-                        <label for="Nombre">Nombre</label>
-                        <input class="bordes" type="text" placeholder="Ingrese su nombre" id="Nombre">
-                        <br><br>
-                        <label for="E-mail">E-mail</label>
-                        <input class="bordes" type="text" placeholder="Ingrese su E-mail" id="E-mail">
-                        <br><br>
-                        <label for="Telefono">Telefono de contacto</label>
-                        <input class="bordes" type="text" placeholder="Ingrese su Telefono" id="Telefono">
-                        <br><br>
-                        <label for="Ciudad">Ciudad de origen del flete</label>
-                        <input class="bordes" type="text" placeholder="Ingrese ciudad de origen" id="origen">
-                        <br><br>
-                        <label for="Ciudad">Ciudad de destino del flete</label>
-                        <input class="bordes" type="text" placeholder="Ingrese ciudad de destino" id="destino">
-                        <br><br>
-                        <label for="peso">Peso en kg de la carga</label>
-                        <input class="bordes" type="text" placeholder="Ingrese peso de la carga" id="peso">
-                        <br><br>
-                        <label for="Descripcion">Ingrese descripcion sobre la carga:</label>
-                        <br><br>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                        <br><br>
-                        <input type="submit" value="Enviar formulario">
-                        <input type="reset" value="Limpiar formulario">
-                        <br><br>
-                    </div>
+            <div class="formulario" style="width: 550px;">
+                <h1 class="subtitulo">Formulario de Contacto </h1>
+                <br></br>
+                <div class="form-group">
+                    <label for="Nombre">Nombre</label>
+                    <input class="bordes" type="text" placeholder="Ingrese su nombre" id="Nombre">
+                    <br><br>
+                    <label for="E-mail">E-mail</label>
+                    <input class="bordes" type="text" placeholder="Ingrese su E-mail" id="E-mail">
+                    <br><br>
+                    <label for="Telefono">Telefono de contacto</label>
+                    <input class="bordes" type="text" placeholder="Ingrese su Telefono" id="Telefono">
+                    <br><br>
+                    <label for="Ciudad">Ciudad de origen del flete</label>
+                    <input class="bordes" type="text" placeholder="Ingrese ciudad de origen" id="origen">
+                    <br><br>
+                    <label for="Ciudad">Ciudad de destino del flete</label>
+                    <input class="bordes" type="text" placeholder="Ingrese ciudad de destino" id="destino">
+                    <br><br>
+                    <label for="peso">Peso en kg de la carga</label>
+                    <input class="bordes" type="text" placeholder="Ingrese peso de la carga" id="peso">
+                    <br><br>
+                    <label for="Descripcion">Ingrese descripcion sobre la carga:</label>
+                    <br><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpiar formulario">
+                    <br><br>
                 </div>
+            </div>
             </span>
         </fieldset>
     </form>
     <!-- JS bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 <br></br>
 <footer class="piedepagina">
